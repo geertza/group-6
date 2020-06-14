@@ -6,7 +6,7 @@ let fs=require("fs")
 router.post("/api", function(req, res) {
     let {search,cuisine,diet,alergy} = req.body
   
-    model.FindRecipe(search,cuisine,diet,alergy,function (results){
+    model.searchRecipes(search,cuisine,diet,alergy,function (results){
       data =`const searchResults = ${JSON.stringify(results.data.results)}`
       fs.writeFile("./public/javascript/apiResults.js", data, (err) => {
         if (err) throw err;
@@ -15,7 +15,13 @@ router.post("/api", function(req, res) {
 res.render("ApiResults")
 });
 });
-  
+router.get("/api/instructions", function(req, res) {
+let id ="482788"
+model.getRecipeInfo(id,function (results){
+ console.log(results)
+  res.render("ApiResults")
+});
+});
 
 router.get("/", (req, res) => {
     res.render("index");
