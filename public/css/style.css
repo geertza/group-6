@@ -70,11 +70,9 @@ input[type=text] {
 }
 .results{
   width: 60vw;
-  
-  display: none;
   position: absolute;
   right: 5%;
-  top: 40%;
+  top: 25%;
 }
 
   .recipegrid {

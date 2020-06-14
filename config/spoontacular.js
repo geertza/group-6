@@ -6,5 +6,4 @@ console.log("api alergy=",alergy)
     console.log("query",queryUrl)
     //  Creating an AJAX call for the specific search button being clicked.
     axios.get(queryUrl).then(function (response) {
-     
         cb(response);})}
