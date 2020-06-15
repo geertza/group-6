@@ -16,12 +16,12 @@ res.render("ApiResults")
 });
 });
 router.get("/api/instructions", function(req, res) {
-let id ="482788"
-model.getRecipeInfo(id,function (results){
- console.log(results)
-  res.render("ApiResults")
+// let id ="482788"
+// model.getRecipeInfo(id,function (results){
+//  console.log(results)
+  res.render("recipe")
 });
-});
+// });
 
 router.get("/", (req, res) => {
     res.render("index");
