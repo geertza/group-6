@@ -4,43 +4,80 @@
             <h1>Home Kitchen Boss</h1>
         </div>
     </div>
-    <div class="row">
-        <div class="boss col">
+    <div class="savory">
+            
+        </div>
+    
+    <div class="row main">
+        
+        
+        <div class="summary">
+            <h2>What's to love about this one!</h2>
         </div>
         <div class="ingredients">
-
+            <h2>The keys to greatness</h2>
         </div>
+
+
         <div class="instructions">
+            <h2>Instructions</h2>
 
         </div>
     </div>
 <style>
-
+.main{
+    position: absolute;
+    top: 30vh;
+}
 h1{
     width: 100%;
     height: 20vh;
-    background-color: cornsilk;
+    
 }
-.boss{
-width: 15vw;
-height: 100vh;
-background-color: red;
-float: left;
-float: inline-end;
+body{
+   background-color: cornsilk; 
 }
-.ingredients{
-    width: 80vw;
-    height: 20vh;
-    background-color: rgb(57, 24, 109);
+h2{
+    text-align: center;
+    font-size: 2.5vw;
+    color: dimgray;
+    text-shadow: firebrick;
+}
+
+.summary{
+    width: 60vw;
+    height: auto;
+   
+    float: right;
+    float: inline-start;
+    
+}
+.instructions{
+    width: 60vw;
+    height: auto;
+   
+    border-color: rgba(235, 33, 6, 0.842);
+    border-width: 5px;
+    border-style: double;
     float: right;
     float: inline-start;
 }
-.instructions{
-    width: 80vw;
-    height: 70vh;
-    background-color: rgb(24, 109, 81);
+.savoryy{
+    width: 30vw;
+    height: 30vw;
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    float: inline-end;
+}
+.ingredients{
+     width: 60vw;
+    height: auto;
     float: right;
     float: inline-start;
 }
 </style>
+<script src="/javascript/recipeData.js"></script>
+          <script src="/javascript/recipe.js"></script>
 </body>

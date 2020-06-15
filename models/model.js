@@ -12,14 +12,5 @@ var model = {
   }
 
 
-// function doSomething(callback) {
-//   something(function(err, data) {
-//       if(err) {
-//           callback(err);
-//           return;
-//       }
-//       // Only run if no error 
-//   });
-
   // Export the database functions to use in  controller
   module.exports = model;
